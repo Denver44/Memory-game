@@ -3,51 +3,63 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardArray = [
     {
       name: "fires",
-      img: "/Images/fries.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/fries.png",
     },
     {
       name: "fires",
-      img: "/Images/fries.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/fries.png",
     },
     {
       name: "cheeseburger",
-      img: "/Images/cheeseburger.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/cheeseburger.png",
     },
     {
       name: "cheeseburger",
-      img: "/Images/cheeseburger.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/cheeseburger.png",
     },
     {
       name: "hotdog",
-      img: "/Images/hotdog.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/hotdog.png",
     },
     {
       name: "hotdog",
-      img: "/Images/hotdog.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/hotdog.png",
     },
     {
       name: "ice-cream",
-      img: "/Images/ice-cream.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/ice-cream.png",
     },
     {
       name: "ice-cream",
-      img: "/Images/ice-cream.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/ice-cream.png",
     },
     {
       name: "milkshake",
-      img: "/Images/milkshake.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/milkshake.png",
     },
     {
       name: "milkshake",
-      img: "/Images/milkshake.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/milkshake.png",
     },
     {
       name: "pizza",
-      img: "/Images/pizza.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/pizza.png",
     },
     {
       name: "pizza",
-      img: "/Images/pizza.png",
+      img:
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/pizza.png",
     },
   ];
 
@@ -63,7 +75,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function createboard() {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement("img"); // create and Img element
-      card.setAttribute("src", "/Images/blank.png"); // added the blank image.
+      card.setAttribute(
+        "src",
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/blank.png"
+      ); // added the blank image.
       card.setAttribute("data-id", i); // data-id given to every image.
       card.addEventListener("click", flipcard);
       grid.appendChild(card);
@@ -84,8 +99,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>`;
-      cards[optionOneID].setAttribute("src", "/Images/blank.png");
-      cards[optionTwoID].setAttribute("src", "/Images/blank.png");
+      cards[optionOneID].setAttribute(
+        "src",
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/blank.png"
+      );
+      cards[optionTwoID].setAttribute(
+        "src",
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/blank.png"
+      );
       setTimeout(() => {
         msg.innerHTML = "";
       }, 1000);
@@ -99,15 +120,27 @@ document.addEventListener("DOMContentLoaded", () => {
             </button>
         </div>`;
 
-      cards[optionOneID].setAttribute("src", "/Images/white.png");
-      cards[optionTwoID].setAttribute("src", "/Images/white.png");
+      cards[optionOneID].setAttribute(
+        "src",
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/white.png"
+      );
+      cards[optionTwoID].setAttribute(
+        "src",
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/white.png"
+      );
       cardWon.push(cardchoosen);
       setTimeout(() => {
         msg.innerHTML = "";
       }, 1000);
     } else {
-      cards[optionOneID].setAttribute("src", "/Images/blank.png");
-      cards[optionTwoID].setAttribute("src", "/Images/blank.png");
+      cards[optionOneID].setAttribute(
+        "src",
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/blank.png"
+      );
+      cards[optionTwoID].setAttribute(
+        "src",
+        "https://github.com/DurgeshRai04/Memory-game/blob/master/Images/blank.png"
+      );
       // alert("Sorry Try Again")
       msg.innerHTML = ` <div class="alert alert-warning alert-dismissible fade show" role="alert">
             <strong> Bad Luck! </strong>Sorry Try Again.
