@@ -6,4 +6,4 @@ This is a fun learning project a memory-game app build with using HTML, CSS & Va
 
 ## <a href="https://denver44.github.io/Memory-game/" target="_blank">PLAY NOW</a>
 
-![JavaScript App](<https://github.com/DurgeshRai04/Memory-game/blob/master/Images/Screenshot%20(52).png>)
+![JavaScript App](<https://raw.githubusercontent.com/Denver44/Memory-game/master/Images/Screenshot%20(52).png>)
